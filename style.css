@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+.date-time{
+    display:flex;
+    justify-content:space-between;
+    color:#666;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.search-box input,
+.input-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.input-box button{
+    width:55px;
+    border:none;
+    background:#2575fc;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.input-box button:hover{
+    background:#1258d6;
+}
+
+.filters{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+}
+
+.filter{
+    flex:1;
+    margin:0 5px;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#e5e5e5;
+}
+
+.filter.active{
+    background:#2575fc;
+    color:white;
+}
+
+#taskList{
+    list-style:none;
+}
+
+#taskList li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f7f7f7;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+#clearAll{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    background:red;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#clearAll:hover{
+    background:darkred;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.action-btn{
+    margin-left:5px;
+    border:none;
+    padding:6px 10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.edit{
+    background:orange;
+    color:white;
+}
+
+.delete{
+    background:red;
+    color:white;
+}
+.theme{
+    text-align:right;
+    margin-bottom:15px;
+}
+
+#themeBtn{
+    background:#222;
+    color:#fff;
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.dark{
+    background:#1e1e1e;
+}
+
+.dark .container{
+    background:#2d2d2d;
+    color:#fff;
+}
+
+.dark input{
+    background:#444;
+    color:#fff;
+    border:1px solid #666;
+}
+
+.dark li{
+    background:#3b3b3b;
+}
+
+.dark .filter{
+    background:#555;
+    color:white;
+}
+.extra-inputs{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.extra-inputs select,
+.extra-inputs input{
+    flex:1;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}

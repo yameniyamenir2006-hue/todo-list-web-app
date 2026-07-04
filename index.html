@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1><i class="fa-solid fa-list-check"></i> My To-Do List</h1>
+    <div class="theme">
+    <button id="themeBtn">🌙 Dark Mode</button>
+</div>
+    <div class="date-time">
+        <span id="date"></span>
+        <span id="time"></span>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="searchTask" placeholder="🔍 Search Task...">
+    </div>
+    <div class="extra-inputs">
+
+    <select id="priority">
+        <option value="High">🔴 High</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="Low">🟢 Low</option>
+    </select>
+
+    <input type="date" id="dueDate">
+
+</div>
+
+    <div class="input-box">
+        <input type="text" id="taskInput" placeholder="Enter New Task">
+
+        <button id="addBtn">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+
+    <div class="filters">
+
+        <button class="filter active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter" data-filter="pending">
+            Pending
+        </button>
+
+        <button class="filter" data-filter="completed">
+            Completed
+        </button>
+
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="footer">
+
+        <p>Total :
+            <span id="totalTask">0</span>
+        </p>
+
+        <p>Completed :
+            <span id="completedTask">0</span>
+        </p>
+
+        <p>Pending :
+            <span id="pendingTask">0</span>
+        </p>
+
+    </div>
+
+    <button id="clearAll">
+        Clear All
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
